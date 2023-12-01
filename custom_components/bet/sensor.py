@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from datetime import datetime,timedelta,timezone
-from dateutil import tz  
 import logging
 import voluptuous
 import json
@@ -41,14 +40,14 @@ def setup_platform(
     """Set up the Bet sensors."""
     
     
-    add_entities([BetSensor(config,hass)],True)
+    add_entities([BetMineSensor(config,hass)],True)
 
 
-class BetSensor(entity.Entity):
+class BetMineSensor(entity.Entity):
     """Representation of a Espn sensor."""
 
     def __init__(self,config,hass):
-        """Initialize a new Espn sensor."""
+        """Initialize a new BetMine sensor."""
         self.config = config
         self._attr_name =  'Bet'
         self.hass = hass
@@ -70,7 +69,7 @@ class BetSensor(entity.Entity):
         This is the only method that should fetch new data for Home Assistant.
         """
        
-        # espn.get_highlight(self.config[LEAGUE])
+        
         self.matches = get_matches()
         
 
