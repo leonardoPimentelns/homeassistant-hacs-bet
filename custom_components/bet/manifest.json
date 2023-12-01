@@ -1,1 +1,11 @@
 
+{
+  "domain": "bet",
+  "name": "bet",
+  "version": "1.0.0", 
+  "documentation": "",
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": []
+}
