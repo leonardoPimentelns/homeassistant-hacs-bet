@@ -1,10 +1,11 @@
 
 {
-  "domain": "bet",
-  "name": "bet",
+  "domain": "betmine",
+  "name": "betmine",
   "version": "1.0.0", 
   "documentation": "",
   "zeroconf": [],
+  "requirements":[],
   "homekit": {},
   "dependencies": [],
   "codeowners": []
