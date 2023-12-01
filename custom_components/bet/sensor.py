@@ -22,9 +22,7 @@ import time
 
 _LOGGER = logging.getLogger(__name__)
 
-NAME = 'name'
 UPDATE_FREQUENCY = timedelta(seconds=1)
-LEAGUE ='league'
 
 # PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
 #     {
@@ -52,7 +50,7 @@ class BetSensor(entity.Entity):
     def __init__(self,config,hass):
         """Initialize a new Espn sensor."""
         self.config = config
-        self._attr_name = self.config[NAME]
+        self._attr_name =  'Bet'
         self.hass = hass
         self.event = None
         self.matches= []
